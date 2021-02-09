@@ -31,6 +31,7 @@ console.log(itpa);
 
 let title= document.createElement("h3")
 title.style.color="#fff";
+title.style.placeSelf="center"
 //title.innerText="Assignments Table";
 title.innerText=itpa.users[0].name;
 
