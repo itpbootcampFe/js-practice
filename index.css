@@ -10,6 +10,54 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+html {
+  height: 100%;
+}
+
 body {
+  height: 100%;
   font-family: "Work Sans", sans-serif;
 }
+
+.bg {
+  position: relative;
+  background-attachment: fixed;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position:center;
+  min-height: 100%;
+}
+
+.img1 {
+  background-image: url(4.webp);
+}
+.img2 {
+  background-image: url(6.webp);
+}
+.img3 {
+  background-image: url(a.webp);
+  min-height: 60%;
+}
+.img4 {
+  background-image: url(4.webp);
+}
+
+
+.inner{
+  position: absolute;
+  top:50%;
+  left: 50%;
+}
+
+.section1 {
+  display: grid;
+  place-items: center;
+  height: 300px;
+}
+
+.section2 {
+  background-color: dimgray;
+  height: 300px;
+}
+
+
