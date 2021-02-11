@@ -1,39 +1,59 @@
-const firstPazar = function(yil, ay) {
-  var date = new Date(yil,ay);
-  let indexInWeek = date.getDay();
-  let indexInMonth = date.getDate();
-  if(indexInWeek!==0){
-    while (indexInWeek < 7) {
-      indexInWeek++;
-      indexInMonth++;
-    }
-  }
-  return console.log(`${ay} ayinin ilk pazari ${indexInMonth}. gundur.`);
+// function Seslen (a) {
+//   console.log(a)
+// }
+  
+// Seslen(null);
+
+// for (let i =0; i<10; i++){
+//   Seslen(`hey arkadas${i}`)
+// };
+
+
+// function zarAt () {
+//   let roll = Math.floor(Math.random() * 6)+1;
+//   return (roll);
+// }
+
+// // console.log(zarAt());
+// // // zarAt();
+
+// // function ikiZarAt() {
+// //   let bir = zarAt();
+// //   let iki = zarAt();
+// //   return (console.log(bir+iki))
+// // }
+
+// // ikiZarAt()
+
+
+// function cokZarAt(numberOfRoll) {
+//   let total= 0
+//   for (let i = 0; i <numberOfRoll; i++){
+//       let zar = zarAt();
+//       total = total + zar;
+//       console.log(i+1,"nci zar",zarAt());
+//   }
+//   return total; 
+// }
+
+// console.log(cokZarAt(5));
+
+// function meanRoll(x, y) {
+// 	console.log("ortalama", Math.floor(x / y));
+// }
+
+// meanRoll(cokZarAt(10),10); 
+
+function isPanagram (cumle) {
+  let alphabet = "abcdefghijklmnopqrstuvxyz"
+  let kucukHarfliCumle= cumle.toLowerCase();
+  
+  for(let char of alphabet){
+    if (kucukHarfliCumle.indexOf(char)=== -1){
+     return false;
+    }else{
+   return true;}
+};
 };
 
-
-firstPazar(2030,5);
-
-const itpa = {
-  users:[
-  {
-    name:"Mahmut",
-    githubLink:"githum.com/MAT-IT",
-    assignments: [0,1,0,1]   
-  },
-  ]
-} 
-
-itpa.users[0].name="Hasan";
-
-console.log(itpa);
-
-
-let title= document.createElement("h3")
-title.style.color="#fff";
-title.style.placeSelf="center";
-//title.innerText="Assignments Table";
-title.innerText=itpa.users[0].name;
-
-
-let section2 = document.querySelector(".section2").appendChild(title)
+console.log(isPanagram("The qaaaaasssssssug"))
