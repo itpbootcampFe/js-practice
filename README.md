@@ -1,2 +1,3 @@
 # js-practice
-Javascript practices
+
+Javascript funxtion practices
