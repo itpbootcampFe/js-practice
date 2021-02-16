@@ -51,9 +51,9 @@ function isPanagram (cumle) {
   for(let char of alphabet){
     if (kucukHarfliCumle.indexOf(char)=== -1){
      return false;
-    }else{
-   return true;}
-};
+    }
+  };
+  return true;
 };
 
 console.log(isPanagram("The qaaaaasssssssug"))
